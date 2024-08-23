@@ -15,7 +15,7 @@
 
 <body class="w-screen h-screen antialiased font-jetbrains text-white/80">
 
-  <div id="app" class="w-full h-full bg-dark-1000 p-5">
+  <div id="app" class="w-full h-full bg-dark-1000 p-5 flex  items-center justify-center">
     <!-- PROJECT -->
     <div class="w-[30rem] flex flex-col bg-dark-800 h-full border border-dark-500">
 
@@ -28,7 +28,7 @@
           <div class="flex flex-col">
             <div class="text-xs font-semibold pb-2">ADD YOUR TASK</div>
             <div class="w-full flex">
-              <input type="text"
+              <input type="text" maxlength="50"
                 class="bg-dark-1000 border w-full focus:border-indigo-500 rounded-l-sm border-dark-500 focus:ring-0">
               <input type="submit" value="ADD"
                 class="text-xs bg-indigo-500 hover:bg-indigo-600 w-24 rounded-r-sm text-white px-5 py-3">
@@ -41,17 +41,15 @@
       <div id="todos"
         class="w-full h-full scrollbar-w-[0.15rem] scrollbar  scrollbar-thumb-indigo-500  scrollbar-track-dark-800 overflow-y-scroll">
         <!-- ITEM -->
-        <div id="item" class="flex p-5 items-center justify-between border-b border-dark-500">
+        <!-- <div id="item" class="flex p-5 items-center justify-between border-b border-dark-500">
           <div class="text-xs body">Lorem ipsum dolor sit amet.</div>
           <div class="flex gap-1">
-            <div class="w-8 h-8 cursor-pointer hover:text-indigo-500 flex items-center justify-center">
-              <i class="fa-solid fa-strikethrough"></i>
-            </div>
-            <div class="w-8 h-8 hover:text-red-500 cursor-pointer flex items-center justify-center">
-              <i class="fa-solid fa-eraser"></i>
-            </div>
+            <i data-type="strikethrough"
+              class="fa-solid fa-strikethrough w-8 h-8 hover:text-red-500 cursor-pointer flex items-center justify-center"></i>
+            <i data-type="erase"
+              class="fa-solid fa-eraser w-8 h-8 hover:text-red-500 cursor-pointer flex items-center justify-center"></i>
           </div>
-        </div>
+        </div> -->
         <!-- END ITEM -->
       </div>
       <!-- END TODO -->
